@@ -1,0 +1,53 @@
+
+<html>
+<head>
+	<title>Alert Box</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+$("div").show();
+});
+  $(".close").click(function(){
+    $("div").hide();
+  });
+
+});
+</script>
+	<style>
+div{
+border:2px solid #ff0505;
+height:250px;
+width:600px;
+background-color:#f55f5f;
+text-align:right;
+font-size: 50px;
+display:none;
+}
+strong{
+color:#360303;
+font-size: 150px;
+}
+.close{
+background-color:brown;
+color:white;
+height:40px;
+width:80px;
+}
+.alert{
+background-color:#5ced6b;
+color:black;
+height:50px;
+width:80px;
+
+}
+	</style>
+</head>
+<body>
+<center><button type="button" class="alert" id="b1"><b>Alert</b></button></center>
+<center><div><center><strong>Alert !!</strong> <br><button type="button" class="close">close</button></center></div></center>
+
+</body>
+</html>

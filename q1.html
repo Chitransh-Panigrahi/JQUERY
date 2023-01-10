@@ -1,0 +1,24 @@
+<html>
+<head><title>q1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+var count=$("#selected").find("p").length;
+$("#selected").append(count);
+  });
+});
+</script>
+</head>
+<body>
+<div id="selected">
+<p>Red</p>
+<p>White</p>
+<p>Green</p>
+<p>Black</p>
+<p>Blue</p>
+<p>Orange</p>
+</div>
+<button>Count</button>
+</body>
+</html>

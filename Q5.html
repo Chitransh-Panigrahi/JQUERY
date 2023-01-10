@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Q5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#click").click(function(){
+          $("#slide").slideDown("slow");
+        });
+        $("#a").click(function(){
+     $("div").animate({left: '250px'});
+   });
+   $("#b").click(function(){
+   $("#fadeIn").fadeIn("slow");
+ });
+ $("#c").click(function(){
+   $(".show").show();
+ });
+ $(".mouseenter").mouseenter(function() {
+       alert("You entered Mouse enter!");
+     });
+     $("#dbl").dblclick(function(){
+    alert("The Button was double-clicked.");
+  });
+  $(".div").mouseleave(function(){
+  alert("Mouse left.");
+  });
+  $("#attr").click(function(){
+   $("img").attr("width", "70%");
+ });
+ $("#html").click(function(){
+   $("#p").html("Hello <b>world!</b>");
+ });
+      });
+    </script>
+    <style>
+      #click,#slide{
+        padding:5px;
+        text-align:center;
+        background-color:lightgreen;
+      }
+      #slide{
+        padding:50px;
+      display:none;
+        background:pink;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h2>Slidedown</h2>
+    <div id="click">
+      Click here for slidedown
+    </div>
+    <div id="slide">
+      Hello World!
+    </div>
+    <br><br>
+    <h2>Animate</h2>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div><br><br><br><br><br><br>
+<button id="a">Start Animation</button>
+
+
+<h2>FadeIn().</h2>
+<div id="fadeIn" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<button id="b">Click to FadeIn</button><br><br>
+<h2>Show</h2>
+<div class="show" style="width:80px;height:80px;display:none;background-color:tomato;">
+</div><br>
+<button id="c">Show</button>
+<br><br>
+<h2>Mouse enter</h2>
+<div class="mouseenter" style="height:80px;width:60%;background-color:gray;color:white;text-align:center;">
+  <br>ALERT BOX OPENS WHEN MOUSE ENTERED.
+</div>
+<h2>Double click</h2>
+<button id="dbl">Double click here</button>
+<h2>Mouse Leave</h2>
+<div class="div" style="height:100px;width:80%;background-color:#ccffff;"><br>
+ <p id="ml">The mouseleave event occurs when the mouse pointer leaves the selected element.<br>
+
+The mouseleave() method triggers the mouseleave event, or attaches a function to run when a mouseleave event occurs.</p>
+</div>
+<h2>Attr</h2>
+<img src="https://images8.alphacoders.com/484/484717.jpg" alt="Pulpit Rock" width="28%" height="50%"><br>
+<button id="attr">Set the width attribute of the image</button>
+<h2>HTML</h2>
+
+
+<p id="p">This is a paragraph.</p>
+<button id="html">Change content of all p elements</button>
+  </body>
+</html>

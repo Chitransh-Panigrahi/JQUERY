@@ -1,0 +1,30 @@
+<html>
+<head><title>q2</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+$(this).text("Single click happened");
+
+  });
+ $("p").dblclick(function(){
+$(this).text("Double click happened");
+  });
+});
+</script>
+<style>
+p{
+border:3px solid black;
+  height: 100px;
+  width: 50%;
+ font-size: 40px;
+color:blue;
+ text-indent: 50px;
+ background-color: powderblue;
+}
+</style>
+</head>
+<body>
+<p>Click me!</p>
+</body>
+</html>
